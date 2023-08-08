@@ -37,30 +37,6 @@
 <script src="index.js"></script>
 </body>
 </html>
-[0:01 am, 09/08/2023] Deepa: const userForm = document.getElementById("user-form");
-const userEntries = retrieveEntries();
-const details = document.getElementById("user-entries");
-
-
-function retrieveEntries() {
-  return JSON.parse(localStorage.getItem("UserEntries") || "[]");
-}
-
-function displayEntries() {
-  const tableEntries = userEntries
-    .map(({ name, email, password, dob, acceptTerms }) => `
-      <tr>
-        <td class="border px-4 py-2">${name}</td>
-        <td class="border px-4 py-2">${email}</td>
-        <td class="border px-4 py-2">${password}</td>
-        <td class="border px-4 py-2">${dob}</td>
-        <td class="border px-4 py-2">${acceptTerms}</td>
-      </tr>
-    `)
-    .join("\n");
-  const table = `
-    <table class="table-auto w-full">
-      <thead>
-        <tr>
-   …
-  
+ 
+    
+         
